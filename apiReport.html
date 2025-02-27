@@ -87,7 +87,7 @@
 </head>
 <body>
     <h2>Revenova API Integration Report
-25 February 2025 at 08:16:12
+27 February 2025 at 08:16:17
 </h2>
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for API" title="Type in a name">
     <table id="myTable">
@@ -624,7 +624,7 @@
 <tr>
 <td>KleinschmidtSendLoadInvoicesOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;">About Information Not Found</td>
-<td>https://www.sub.kleinschmidt.com/revenova</td>
+<td>https://www.sub.kleinschmidt.com/revenova/SendLoadInvoices</td>
 <td>POST</td>
 </tr>
 <tr>
@@ -1236,10 +1236,83 @@
 <td>GET</td>
 </tr>
 <tr>
-<td rowspan=8>TrimbleAPI</td>
+<td rowspan=11>TextLocateAPI</td>
+<td>TextLocateDeletePingScheduleOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://dashboard.textlocate.com/tl/api<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Delete all scheduled messages / ping requests for a specific load.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>DeleteScheduledMessage<br> </td>
+<td>https://api.textlocate.com/ScheduledMessage/textlocateId?textlocateId=</td>
+<td>DELETE</td>
+</tr>
+<tr>
+<td>TextLocateGetImageOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;">About Information Not Found</td>
+<td>https://api.textlocate.com</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>TextLocateGetSubscriptionsOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://dashboard.textlocate.com/tl/api<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Returns a list of currently active webhook subscriptions<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>GetSubscriptions<br> </td>
+<td>https://api.textlocate.com/Webhook</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>TextLocateLoginOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://dashboard.textlocate.com/tl/api<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Retrieves Bearer token<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>RestAuthenticate<br> </td>
+<td>https://api.textlocate.com/Rest/authenticate</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>TextLocateSendPingRequestOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://dashboard.textlocate.com/tl/api<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Schedule a message or ping request to be sent to the driver of a load<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>ScheduledMessage<br> </td>
+<td>https://api.textlocate.com/ScheduledMessage</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>TextLocateSendScheduleOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://dashboard.textlocate.com/tl/api<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Schedule multiple scheduled messages/ping requests over a period of time every n hours indicated by the cadence<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>MultipleScheduledMessages<br> </td>
+<td>https://api.textlocate.com/ScheduledMessage/multipleScheduledMessages</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>TextLocateSendSMSOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://dashboard.textlocate.com/tl/api<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Send a text message to a specific phone number from your TextLocate number<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>SendSMS<br> </td>
+<td>https://api.textlocate.com/Sms/message</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>TextLocateSubscribeOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://dashboard.textlocate.com/tl/api<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Subscribe to message updates from TextLocate. "Webhooks are a way for us to automatically send you data as we get it." If the TextLocate credential password changes a new subscription must be sent.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>WebhookSubscribe<br> </td>
+<td>https://api.textlocate.com/Webhook/subscribe</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>TextLocateUnsubscribeOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://dashboard.textlocate.com/tl/api<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Deletes a webhook subscription based on the webhook subscription id<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>DeleteWebhook<br> </td>
+<td>https://api.textlocate.com/Webhook</td>
+<td>DELETE</td>
+</tr>
+<tr>
+<td>TextLocateUpdateDriverPhoneOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://dashboard.textlocate.com/tl/api<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Updates a load with a provided driver.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>UpdateDriver<br> </td>
+<td>https://api.textlocate.com/Load/updateDriver</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>TextLocateUploadLoadOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://dashboard.textlocate.com/tl/api<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Add a load to TextLocate<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>UploadLoad<br> </td>
+<td>https://api.textlocate.com/Load</td>
+<td>POST</td>
+</tr>
+<tr>
+<td rowspan=9>TrimbleAPI</td>
 <td>TrimbleCancelTripOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developer.trimblemaps.com/restful-apis/trip-management/api-documentation/cancel-trip/<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Operation used to cancel an in progress Trimble Trip.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>cancelTrip<br> </td>
 <td>https://tripmanagement.alk.com/api/trip/</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>TrimbleGetDerivedRouteOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;">About Information Not Found</td>
+<td>https://tripmanagement.alk.com</td>
 <td>POST</td>
 </tr>
 <tr>
@@ -1508,6 +1581,7 @@
 <tr><td>SMC3EVA</td></tr>
 <tr><td>SMC3EVA</td></tr>
 <tr><td>TruckerToolsLoadBoard</td></tr>
+<tr><td>TextLocate</td></tr>
 </table>
 
 
