@@ -87,7 +87,7 @@
 </head>
 <body>
     <h2>Revenova API Integration Report
-27 February 2025 at 08:16:17
+04 March 2025 at 08:16:23
 </h2>
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for API" title="Type in a name">
     <table id="myTable">
@@ -138,17 +138,23 @@
 <td>GET</td>
 </tr>
 <tr>
-<td rowspan=12>AxleAPI</td>
+<td rowspan=15>AxleAPI</td>
+<td>AxleGetDocumentsOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;">About Information Not Found</td>
+<td>https://api.axleapi.com/v1/fleet/documents?fleet_id=</td>
+<td>Get</td>
+</tr>
+<tr>
 <td>AxleGetDriverHOSLogsOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.axleapi.com/reference/get_driver-hos-logs<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Retrieves HOS Logs for a driver based on start/end date.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>getDriverHOSLogs<br> </td>
 <td>https://api.axleapi.com/v1/driver/hos_logs?fleet_id=</td>
-<td>GET</td>
+<td>Get</td>
 </tr>
 <tr>
 <td>AxleGetDriversOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.axleapi.com/reference/get_fleet-drivers<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Retrieves a list of Axle drivers for a given fleet.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>getDrivers<br> </td>
 <td>https://api.axleapi.com/v1/fleet/drivers?fleet_id=</td>
-<td>GET</td>
+<td>Get</td>
 </tr>
 <tr>
 <td>AxleGetEngineStateOperation</td>
@@ -160,55 +166,67 @@
 <td>AxleGetFleetDataOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.axleapi.com/reference/getfleet<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Gets information about a fleet.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>getFleetData<br> </td>
 <td>https://api.axleapi.com/v1/fleet/</td>
-<td>GET</td>
+<td>Get</td>
 </tr>
 <tr>
 <td>AxleGetFleetIdsOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.axleapi.com/reference/get_fleet-all<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Retrieves a list of fleet ids associated with the account.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>getFleetIds<br> </td>
 <td>https://api.axleapi.com/v1/fleet/all</td>
-<td>GET</td>
+<td>Get</td>
 </tr>
 <tr>
 <td>AxleGetHOSAvailabilityOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.axleapi.com/reference/get_driver-hos-availability<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Retrieves HOS availability for a provided list of drivers.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>getHOSavailability<br> </td>
 <td>https://api.axleapi.com/v1/driver/hos_availability?</td>
-<td>GET</td>
+<td>Get</td>
+</tr>
+<tr>
+<td>AxleGetMessagesOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;">About Information Not Found</td>
+<td>https://api.axleapi.com/v1/fleet/messages?fleet_id=</td>
+<td>Get</td>
 </tr>
 <tr>
 <td>AxleGetTokenOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.axleapi.com/reference/post_token<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Gets a new authentication token for the other Axle callouts.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>getToken<br> </td>
 <td>https://api.axleapi.com/v1/token</td>
-<td>POST</td>
+<td>Post</td>
 </tr>
 <tr>
 <td>AxleGetVehicleLocationsOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.axleapi.com/reference/get_fleet-vehicles-locations<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Returns the current location of all vehicles in a fleet.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>getVehicleLocations<br> </td>
 <td>https://api.axleapi.com/v1/fleet/vehicles/locations?fleet_id=</td>
-<td>GET</td>
+<td>Get</td>
 </tr>
 <tr>
 <td>AxleGetVehiclesOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.axleapi.com/reference/get_fleet-vehicles<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Retrieves a list of vehicles in a given fleet.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>getVehicles<br> </td>
 <td>https://api.axleapi.com/v1/fleet/vehicles?fleet_id=</td>
-<td>GET</td>
+<td>Get</td>
 </tr>
 <tr>
 <td>AxleLinkFleetOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.axleapi.com/docs/axle-link<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Retrieves a url to link a new fleet to an account.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>getFleetLink<br> </td>
 <td>https://api.axleapi.com/v1/service/link_token</td>
-<td>POST</td>
+<td>Post</td>
+</tr>
+<tr>
+<td>AxleSendMessageOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;">About Information Not Found</td>
+<td>https://api.axleapi.com/v1/fleet/message</td>
+<td>Post</td>
 </tr>
 <tr>
 <td>AxleUpsertDriverOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.axleapi.com/reference/post_driver<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Upserts a new driver in a given fleet (either POST or PATCH).<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>upsertDriver<br> </td>
 <td>https://api.axleapi.com/v1/driver/</td>
-<td>PATCH</td>
+<td>UNKNOWN</td>
 </tr>
 <tr>
 <td>AxleUpsertVehicleOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.axleapi.com/reference/patch_vehicle-vehicle-id<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Updates a new vehicle in a given fleet. Axle does not currently support inserting a new vehicle.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>upsertVehicle<br> </td>
 <td>https://api.axleapi.com/v1/vehicle/</td>
-<td>PATCH</td>
+<td>UNKNOWN</td>
 </tr>
 <tr>
 <td rowspan=6>BanyanAPI</td>
