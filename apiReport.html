@@ -87,7 +87,7 @@
 </head>
 <body>
     <h2>Revenova API Integration Report
-06 June 2025 at 08:16:10
+09 June 2025 at 08:36:15
 </h2>
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for API" title="Type in a name">
     <table id="myTable">
@@ -831,7 +831,7 @@
 <td>POST</td>
 </tr>
 <tr>
-<td rowspan=4>PCMilerAPI</td>
+<td rowspan=6>PCMilerAPI</td>
 <td>PCMilerGeoLocateOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developer.trimblemaps.com/web-services/api/interface_a_l_k_1_1_p_c_m_1_1_portal_service_1_1_i_service.html#a24f1787a22ac10b2f0975c50d0fb5c33<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>The ProcessGeocode operation allows you to find the find the closest latitude and longitude for a given street/city/state/zip address location supplied in the Request object.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>ProcessGeocode<br> </td>
 <td>https://pcmiler.alk.com/APIs/SOAP/v1.0/service.svc</td>
@@ -848,6 +848,18 @@
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developer.trimblemaps.com/web-services/api/interface_a_l_k_1_1_p_c_m_1_1_portal_service_1_1_i_service.html#aec9d9e24bb7061f3ff46a18c3367872a<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>The GetReports operation allows a user to run a collection of routes based on input locations, routing and reporting options, with the requested type of reports.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>GetReports<br> </td>
 <td>https://pcmiler.alk.com/APIs/SOAP/v1.0/service.svc</td>
 <td>POST</td>
+</tr>
+<tr>
+<td>PCMilerRestGeoLocateOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developer.trimblemaps.com/restful-apis/location/geocoding-api/geocoding-batch/<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Batch geocoding allows you to retrieve longitude and latitude coordinates as well as address information for a set of addresses through a single POST request. <br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Geocoding Batch<br> </td>
+<td>https://pcmiler.alk.com/apis/rest/v1.0/service.svc/locations/address/batch</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>PCMilerRestGetReportOperation</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;">About Information Not Found</td>
+<td>https://pcmiler.alk.com</td>
+<td>Post</td>
 </tr>
 <tr>
 <td>PCMilerReverseGeoLocateOperation</td>
