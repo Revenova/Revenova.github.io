@@ -87,7 +87,7 @@
 </head>
 <body>
     <h2>Revenova API Integration Report
-17 September 2025 at 08:16:10
+19 September 2025 at 10:06:42
 </h2>
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for API" title="Type in a name">
     <table id="myTable">
@@ -568,19 +568,19 @@
 <td rowspan=3>HubTranAPI</td>
 <td>HubTranSendCarrierOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Postman collection attached to the "TriumphPay (HubTran)" account in the corporate org ("Audit API (3PL - Broker) (2).postman_collection4-11-23"<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Creates and updates carrier info<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Create & Update Carriers<br> </td>
-<td>https://api.hubtran.com/tms/carriers/</td>
+<td>https://api.audit.triumphpay.com/tms/carriers/</td>
 <td>PUT</td>
 </tr>
 <tr>
 <td>HubTranSendLoadOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Postman collection attached to the "TriumphPay (HubTran)" account in the corporate org ("Audit API (3PL - Broker) (2).postman_collection4-11-23"<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Creates or updates a load based on the given external_id. Returns the details of the created or updated load.<br> Modeling Loads and Shipments<br> A load is a truck movement, made by one carrier, carrying one or more shipments. It may have one or more picks and one or more drops. <br> Charges accrued against the load may be modeled as a charge property on the load, or as a set of line items. Line items are recommended over "total charge", because you can more specifically see where the expected charge differs from the actual charge. <br> Line item charges are also necessary in the case where multiple carriers may invoice you for a given load.<br> When to send load data<br> Send load and shipment data as early in their as possible. At a minimum we need the load data prior to the time when any documents (via email or api) would be received from carriers.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Create & Update Loads<br> </td>
-<td>https://api.hubtran.com/tms/loads/</td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Postman collection attached to the "TriumphPay (HubTran)" account in the corporate org ("Audit API (3PL - Broker) (2).postman_collection4-11-23"<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Creates or updates a load based on the given external_id. Returns the details of the created or updated load.<br> Modeling Loads and Shipments<br> A load is a truck movement, made by one carrier, carrying one or more shipments. It may have one or more picks and one or more drops.<br> Charges accrued against the load may be modeled as a charge property on the load, or as a set of line items. Line items are recommended over "total charge", because you can more specifically see where the expected charge differs from the actual charge.<br> Line item charges are also necessary in the case where multiple carriers may invoice you for a given load.<br> When to send load data<br> Send load and shipment data as early in their as possible. At a minimum we need the load data prior to the time when any documents (via email or api) would be received from carriers.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Create & Update Loads<br> </td>
+<td>https://api.audit.triumphpay.com/tms/loads/</td>
 <td>PUT</td>
 </tr>
 <tr>
 <td>HubTranSendShipmentOperation</td>
 <td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Postman collection attached to the "TriumphPay (HubTran)" account in the corporate org ("Audit API (3PL - Broker) (2).postman_collection4-11-23"<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Creates and updates shipments<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Create & Update Shipments<br> </td>
-<td>https://api.hubtran.com/tms/shipments</td>
+<td>https://api.audit.triumphpay.com/tms/shipments</td>
 <td>PUT</td>
 </tr>
 <tr>
