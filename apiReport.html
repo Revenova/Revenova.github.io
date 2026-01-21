@@ -87,7 +87,7 @@
 </head>
 <body>
     <h2>Revenova API Integration Report
-20 January 2026 at 08:16:18
+21 January 2026 at 08:17:16
 </h2>
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for API" title="Type in a name">
     <table id="myTable">
@@ -243,7 +243,7 @@
 <tr>
 <td rowspan=6>BanyanAPI</td>
 <td>BanyanCancelTenderOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.banyantechnology.com/#51733ec5-3f50-4f13-b847-76bb64786d4f<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This function will unbook a shipment. This request has no communication with the carrier. This function is not to be used when the shipment has been dispatched. <br> This will only move a shipment back into the quoted status, for purposes to book another available quote related to the shipment.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>UnBookLoad<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.banyantechnology.com/#51733ec5-3f50-4f13-b847-76bb64786d4f<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This function will unbook a shipment. This request has no communication with the carrier. This function is not to be used when the shipment has been dispatched.<br> This will only move a shipment back into the quoted status, for purposes to book another available quote related to the shipment.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>UnBookLoad<br> </td>
 <td>https://ws.logistics.banyantechnology.com/services/api/rest/UnBookLoad</td>
 <td>POST</td>
 </tr>
@@ -261,13 +261,13 @@
 </tr>
 <tr>
 <td>BanyanStatusAllOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.banyantechnology.com/#74d5d86e-0fc3-405a-a95f-05f736b89768<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This function will return all the tracking statuses for all the clients under your web service user’s super user group. Tracking statuses can either be gathered by Banyan’s automated tracking process or EDI 214 process. <br> Each status will only be exported once. The carrier message returned in the response is directly from the carrier and is simply parsed by Banyan. Banyan does not make any adjustments to that message<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>GetTrackingStatuses<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.banyantechnology.com/#74d5d86e-0fc3-405a-a95f-05f736b89768<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This function will return all the tracking statuses for all the clients under your web service user’s super user group. Tracking statuses can either be gathered by Banyan’s automated tracking process or EDI 214 process.<br> Each status will only be exported once. The carrier message returned in the response is directly from the carrier and is simply parsed by Banyan. Banyan does not make any adjustments to that message<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>GetTrackingStatuses<br> </td>
 <td>https://ws.logistics.banyantechnology.com/services/api/rest/GetTrackingStatuses</td>
 <td>POST</td>
 </tr>
 <tr>
 <td>BanyanTenderOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.banyantechnology.com/#eb182530-4505-40c4-a4a6-33492974c4d5<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This function will book a quote that belongs to the requested shipment. Functionality exists to also dispatch the shipment. Booking a quote only awards a quote in Banyan, and no communication is done with the given carrier. When dispatching the shipment, the communication is controlled by the SubmitPickup bit. <br> Additionally, the quote ID is required for a successful response. You obtain this via the GetQuotes call.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>BookLoad<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.banyantechnology.com/#eb182530-4505-40c4-a4a6-33492974c4d5<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This function will book a quote that belongs to the requested shipment. Functionality exists to also dispatch the shipment. Booking a quote only awards a quote in Banyan, and no communication is done with the given carrier. When dispatching the shipment, the communication is controlled by the SubmitPickup bit.<br> Additionally, the quote ID is required for a successful response. You obtain this via the GetQuotes call.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>BookLoad<br> </td>
 <td>https://ws.logistics.banyantechnology.com/services/api/rest/BookLoad</td>
 <td>POST</td>
 </tr>
@@ -286,7 +286,7 @@
 </tr>
 <tr>
 <td>BlueYonderSendQuoteResponseOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "Blue Yonder" Account in Corporate Org<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This operation will be called by providers which process dynamic capacity quote requests asynchronously. <br> The calculated quote(s) or rejection are returned to the Blue Yonder Network and routed to the customer that initially requested the quote.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Dynamic Price Discovery<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "Blue Yonder" Account in Corporate Org<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This operation will be called by providers which process dynamic capacity quote requests asynchronously.<br> The calculated quote(s) or rejection are returned to the Blue Yonder Network and routed to the customer that initially requested the quote.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Dynamic Price Discovery<br> </td>
 <td>https://lctluminetprd01-api.jdadelivers.com/api/v1/dynamicCapacity/quoteResponse</td>
 <td>POST</td>
 </tr>
@@ -306,7 +306,7 @@
 <tr>
 <td rowspan=1>BreakthroughAPI</td>
 <td>BreakthroughGetFuelSurchargeOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "Breakthrough Fuel" Account in Corporate Org<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Breakthrough’s Load Lookup API provides partner organizations the ability to request fuel amounts for official loads that are already in the FELIX system. <br> This API does not insert new shipments, nor does it perform a fuel calculation. It simply returns the fuel amount already on the requested load - <br> if it has been provided by the shipper. It is an alternative mechanism to SFTP, AS2, email, and on-screen lookups for obtaining fuel amounts for a load.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Load Lookup API<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "Breakthrough Fuel" Account in Corporate Org<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Breakthrough’s Load Lookup API provides partner organizations the ability to request fuel amounts for official loads that are already in the FELIX system.<br> This API does not insert new shipments, nor does it perform a fuel calculation. It simply returns the fuel amount already on the requested load -<br> if it has been provided by the shipper. It is an alternative mechanism to SFTP, AS2, email, and on-screen lookups for obtaining fuel amounts for a load.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Load Lookup API<br> </td>
 <td>https://api.askfelix.com/fuel-report/</td>
 <td>GET</td>
 </tr>
@@ -377,7 +377,7 @@
 </tr>
 <tr>
 <td>DATGetCurrentRatesOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "DAT" Account in Corporate Org ("DAT_SOAP_API_Request_Reference.cleaned")<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Request spot-market and/or contract rate information for a lane, including estimated rate, range, and a numeric representation of DAT’s confidence in that estimate. <br> DAT SOAP API Detailed Request Reference 49 Each rate requested will be credited against the pool of lookups associated with the user’s Truckload Rate Index subscription.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>LookupRate<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "DAT" Account in Corporate Org ("DAT_SOAP_API_Request_Reference.cleaned")<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Request spot-market and/or contract rate information for a lane, including estimated rate, range, and a numeric representation of DAT’s confidence in that estimate.<br> DAT SOAP API Detailed Request Reference 49 Each rate requested will be credited against the pool of lookups associated with the user’s Truckload Rate Index subscription.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>LookupRate<br> </td>
 <td>https://cnx.dat.com/TfmiRequest</td>
 <td>POST</td>
 </tr>
@@ -414,7 +414,7 @@
 <tr>
 <td rowspan=7>DAT_REST_API</td>
 <td>DATRESTDeleteLoadPostingsOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developer.dat.com/developer-portal/post-loads-and-trucks/freight-posting/v2/overview/#operation/deleteLoadPostingV2<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Deletes one or more posted assets. To delete means the asset is no longer available for freight matching. <br> <span style="color:SteelBlue; font-weight:bold">Name: </span>DeleteAsset<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developer.dat.com/developer-portal/post-loads-and-trucks/freight-posting/v2/overview/#operation/deleteLoadPostingV2<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Deletes one or more posted assets. To delete means the asset is no longer available for freight matching.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>DeleteAsset<br> </td>
 <td>https://__appName__.api.dat.com</td>
 <td>DELETE</td>
 </tr>
@@ -481,7 +481,7 @@
 </tr>
 <tr>
 <td>EFSLoadCashOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "WEX Inc." Account in Corporate Org ("EFS LLC Card Web Service Integration GuideV11")<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Loads one-time or SmartFunds cash to a card. If your account is flagged (request made by your Account Manager) you can put a duplicate check mechanism in to avoid duplicate loads <br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Load Cash by Driver ID Version 2<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "WEX Inc." Account in Corporate Org ("EFS LLC Card Web Service Integration GuideV11")<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Loads one-time or SmartFunds cash to a card. If your account is flagged (request made by your Account Manager) you can put a duplicate check mechanism in to avoid duplicate loads<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Load Cash by Driver ID Version 2<br> </td>
 <td>https://ws.efsllc.com/axis2/services/CardManagementWS</td>
 <td>POST</td>
 </tr>
@@ -519,19 +519,19 @@
 <tr>
 <td rowspan=3>FalveyAPI</td>
 <td>FalveyCommitInsuranceOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "Falvey Insurance" Account in Corporate Org ("Falvey Shippers Insurance API Documentation_20230609")<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>The Commit web-service allows the client to commit to purchasing insurance for the merchandise that was entered. <br> Once this commit web-service is initiated Falvey takes in the data, creates a policy (if needed), and returns a link to download the certificate of insurance. <br> The Commit web-service will search the <ShippingMerchandiseDescription> node for the existence of any of the excluded item words (as returned by the Excluded Item web service function). <br> If any items are found (even partial matches, i.e. if "auto" is an excluded item, "automobile" will be returned as a match)<br> the <ExclusionConfirmation> node must contain a valid time stamp, AND the <ExcludedItemID> node must contain the ExcludedItemID(s) of the matching item(s). <br> If an excluded item is detected by the Commit function and those two nodes are not properly supplied and populated, an error XML response will be given and the Commit will not continue. <br> No certificate will be issued for the current transaction. If an existing (non-voided) shipment is found which matches the supplied <ShipmentUUID>, the shipment will be rejected with an error message. <br> Duplicate ShipmentUUIDs are not allowed per CompanyUUID. <br> <span style="color:SteelBlue; font-weight:bold">Name: </span>FAPI - Commit<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "Falvey Insurance" Account in Corporate Org ("Falvey Shippers Insurance API Documentation_20230609")<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>The Commit web-service allows the client to commit to purchasing insurance for the merchandise that was entered.<br> Once this commit web-service is initiated Falvey takes in the data, creates a policy (if needed), and returns a link to download the certificate of insurance.<br> The Commit web-service will search the <ShippingMerchandiseDescription> node for the existence of any of the excluded item words (as returned by the Excluded Item web service function).<br> If any items are found (even partial matches, i.e. if "auto" is an excluded item, "automobile" will be returned as a match)<br> the <ExclusionConfirmation> node must contain a valid time stamp, AND the <ExcludedItemID> node must contain the ExcludedItemID(s) of the matching item(s).<br> If an excluded item is detected by the Commit function and those two nodes are not properly supplied and populated, an error XML response will be given and the Commit will not continue.<br> No certificate will be issued for the current transaction. If an existing (non-voided) shipment is found which matches the supplied <ShipmentUUID>, the shipment will be rejected with an error message.<br> Duplicate ShipmentUUIDs are not allowed per CompanyUUID.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>FAPI - Commit<br> </td>
 <td>https://www.falveycargo.com/components/ws_Commit.cfc?method=getFreightData</td>
 <td>POST</td>
 </tr>
 <tr>
 <td>FalveyGetPriceOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "Falvey Insurance" Account in Corporate Org ("Falvey Shippers Insurance API Documentation_20230609")<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>The Price web service allows the client to submit a shipment value and merchandise description to FAPI. <br> FAPI then runs calculations and returns the cost of the insurance for the value that was passed. It will also search the <ShippingMerchandiseDescription><br> node for the existence of any of the excluded item words (as returned by the Excluded Item web service function). If any items are found <br> (even partial matches, i.e., if "auto" is an excluded item, "automobile" will be returned as a match), they would be returned as a comma-delimited list in the ExcludedItemMatch node of the XML Response. <br> IDs of the excluded item will be returned in the ExcludedItemIDMatch node of the XML Response<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>FAPI - Price<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "Falvey Insurance" Account in Corporate Org ("Falvey Shippers Insurance API Documentation_20230609")<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>The Price web service allows the client to submit a shipment value and merchandise description to FAPI.<br> FAPI then runs calculations and returns the cost of the insurance for the value that was passed. It will also search the <ShippingMerchandiseDescription><br> node for the existence of any of the excluded item words (as returned by the Excluded Item web service function). If any items are found<br> (even partial matches, i.e., if "auto" is an excluded item, "automobile" will be returned as a match), they would be returned as a comma-delimited list in the ExcludedItemMatch node of the XML Response.<br> IDs of the excluded item will be returned in the ExcludedItemIDMatch node of the XML Response<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>FAPI - Price<br> </td>
 <td>https://www.falveycargo.com/components/ws_price.cfc?method=getFreightData</td>
 <td>POST</td>
 </tr>
 <tr>
 <td>FalveyVoidInsuranceOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "Falvey Insurance" Account in Corporate Org ("Falvey Shippers Insurance API Documentation_20230609")<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>The Void web-service allows the caller of the web-service to void a shipment that has already been entered into the system. This can only be completed successfully if the correct credentials are passed. <br> If the shipment has a claim, it cannot be voided. In this case, contact Falvey directly with any questions. *Shipments can be found by: <br>  - ShippingUUID + CompanyUUID<br>  unique identifier used by the client’s system to track the shipment<br>  unique identifier used by the client’s system to track the company<br>  - FalveyShipmentID (unique identifier used by Falvey system to track the shipment)<br>  accepts FalveyShipmentID OR Falvey CertificateNumber<br>  - CertificateNumber<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>FAPI - Void<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "Falvey Insurance" Account in Corporate Org ("Falvey Shippers Insurance API Documentation_20230609")<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>The Void web-service allows the caller of the web-service to void a shipment that has already been entered into the system. This can only be completed successfully if the correct credentials are passed.<br> If the shipment has a claim, it cannot be voided. In this case, contact Falvey directly with any questions. *Shipments can be found by:<br>  - ShippingUUID + CompanyUUID<br>  unique identifier used by the client’s system to track the shipment<br>  unique identifier used by the client’s system to track the company<br>  - FalveyShipmentID (unique identifier used by Falvey system to track the shipment)<br>  accepts FalveyShipmentID OR Falvey CertificateNumber<br>  - CertificateNumber<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>FAPI - Void<br> </td>
 <td>https://www.falveycargo.com/components/ws_Void.cfc?method=getFreightData</td>
 <td>POST</td>
 </tr>
@@ -551,7 +551,7 @@
 <tr>
 <td rowspan=2>FreightWavesAPI</td>
 <td>FreightWavesGetCurrentRatesOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://api.freightwaves.com/index.html#!/RateCalculator/post_RateCalculator_trac<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This endpoint allows permissioned users to call and return our FreightWaves TRAC (Spot) rates. The rates provided in this endpoint are defined by a variety of parameters including: <br> equipment types, modes, aggregation methods, and more to give clients as much insight into the data as possible. Our rate data is being updated daily.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Trac Rates<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://api.freightwaves.com/index.html#!/RateCalculator/post_RateCalculator_trac<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This endpoint allows permissioned users to call and return our FreightWaves TRAC (Spot) rates. The rates provided in this endpoint are defined by a variety of parameters including:<br> equipment types, modes, aggregation methods, and more to give clients as much insight into the data as possible. Our rate data is being updated daily.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Trac Rates<br> </td>
 <td>https://api.freightwaves.com/RateCalculator/trac</td>
 <td>POST</td>
 </tr>
@@ -867,7 +867,7 @@
 </tr>
 <tr>
 <td>PCMilerRestGeoLocateOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developer.trimblemaps.com/restful-apis/location/geocoding-api/geocoding-batch/<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Batch geocoding allows you to retrieve longitude and latitude coordinates as well as address information for a set of addresses through a single POST request. <br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Geocoding Batch<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developer.trimblemaps.com/restful-apis/location/geocoding-api/geocoding-batch/<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Batch geocoding allows you to retrieve longitude and latitude coordinates as well as address information for a set of addresses through a single POST request.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Geocoding Batch<br> </td>
 <td>https://pcmiler.alk.com/apis/rest/v1.0/service.svc/locations/address/batch</td>
 <td>POST</td>
 </tr>
@@ -879,7 +879,7 @@
 </tr>
 <tr>
 <td>PCMilerReverseGeoLocateOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developer.trimblemaps.com/restful-apis/location/geocoding-api/reverse-geocoding-batch/<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Batch reverse geocoding allows you to reverse geocode a batch of geographic coordinates into street addresses through a POST request. The request body contains the collection of coordinates to reverse geocode. <br> The response returns a list of addresses in JSON format, as well as other information, including posted speed limits if the account is licensed for them.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>ReverseGeocodingBatch<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developer.trimblemaps.com/restful-apis/location/geocoding-api/reverse-geocoding-batch/<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Batch reverse geocoding allows you to reverse geocode a batch of geographic coordinates into street addresses through a POST request. The request body contains the collection of coordinates to reverse geocode.<br> The response returns a list of addresses in JSON format, as well as other information, including posted speed limits if the account is licensed for them.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>ReverseGeocodingBatch<br> </td>
 <td>https://pcmiler.alk.com/apis/rest/v1.0/Service.svc/locations/reverse/batch?authToken=</td>
 <td>POST</td>
 </tr>
@@ -947,13 +947,13 @@
 </tr>
 <tr>
 <td>Project44StartLTLTrackingOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developers.project44.com/api-reference/p44-api-reference/operation/createLtlTrackedShipment/<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Use this POST call to start a tracking job, initializing LTL tracking. <br> The tracking job will run for a given duration (designated with the startDateTime and endDateTime parameters), gathering updates from the carrier and reference numbers detailed in the API call. <br> Once a tracking update has been pulled from the carrier into the project44 tracking job, you can access the information via the GET requests below this endpoint. <br> Note that if your dispatch was done through project44, you do not need to initialize tracking. project44 will implicitly start tracking based on the data provided in the dispatch.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Start tracking an LTL shipment<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developers.project44.com/api-reference/p44-api-reference/operation/createLtlTrackedShipment/<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Use this POST call to start a tracking job, initializing LTL tracking.<br> The tracking job will run for a given duration (designated with the startDateTime and endDateTime parameters), gathering updates from the carrier and reference numbers detailed in the API call.<br> Once a tracking update has been pulled from the carrier into the project44 tracking job, you can access the information via the GET requests below this endpoint.<br> Note that if your dispatch was done through project44, you do not need to initialize tracking. project44 will implicitly start tracking based on the data provided in the dispatch.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Start tracking an LTL shipment<br> </td>
 <td>https://na12.api.project44.com/api/v4/ltl/trackedshipments</td>
 <td>PUT' : 'POST</td>
 </tr>
 <tr>
 <td>Project44StartTrackingOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developers.project44.com/api-reference/p44-api-reference/operation/createTruckloadShipment/<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Use this POST call to start a tracking job, initializing Truckload Tracking. <br> Note that If the shipment is initialized by using GeoCoordinates instead of an address, it may be possible that a street address will not be returned in the response.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Start tracking a truckload shipment<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developers.project44.com/api-reference/p44-api-reference/operation/createTruckloadShipment/<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Use this POST call to start a tracking job, initializing Truckload Tracking.<br> Note that If the shipment is initialized by using GeoCoordinates instead of an address, it may be possible that a street address will not be returned in the response.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Start tracking a truckload shipment<br> </td>
 <td>https://na12.api.project44.com/api/v4/tl/shipments</td>
 <td>PUT' : 'POST</td>
 </tr>
@@ -989,7 +989,7 @@
 </tr>
 <tr>
 <td>Project44UpdateLTLTrackingOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developers.project44.com/api-reference/p44-api-reference/operation/updateLtlTrackedShipment/<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Use this endpoint to update a shipment. To achieve this, this endpoint deletes the current shipment and creates a new shipment on which it will begin tracking. <br> This updates how we track the shipment but will not affect the dispatch with the carrier. Note that you must pass the entire details for the shipment, just as you would on a POST. <br> Note that you only need to update a shipment when the carrier, time, or date has changed.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Updates an LTL Shipment<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developers.project44.com/api-reference/p44-api-reference/operation/updateLtlTrackedShipment/<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Use this endpoint to update a shipment. To achieve this, this endpoint deletes the current shipment and creates a new shipment on which it will begin tracking.<br> This updates how we track the shipment but will not affect the dispatch with the carrier. Note that you must pass the entire details for the shipment, just as you would on a POST.<br> Note that you only need to update a shipment when the carrier, time, or date has changed.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Updates an LTL Shipment<br> </td>
 <td>https://na12.api.project44.com</td>
 <td></td>
 </tr>
@@ -1023,7 +1023,7 @@
 </tr>
 <tr>
 <td>RMISGetNewOrUpdatedCarriersOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "Truckstop.com (RMIS/SaferWatch) Account in Corporate Org ("Document API")<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This API provides functionality for clients to fetch from a queue of carriers that have undergone information or status updates. <br> It is intended to be used in conjunction with the Expanded Carrier API to determine when to request XML for a carrier.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>DeltaAPI<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "Truckstop.com (RMIS/SaferWatch) Account in Corporate Org ("Document API")<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This API provides functionality for clients to fetch from a queue of carriers that have undergone information or status updates.<br> It is intended to be used in conjunction with the Expanded Carrier API to determine when to request XML for a carrier.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>DeltaAPI<br> </td>
 <td>https://api.rmissecure.com/_c/std/api/DeltaAPI.aspx</td>
 <td>POST</td>
 </tr>
@@ -1124,7 +1124,7 @@
 </tr>
 <tr>
 <td>SaferWatchGetCertificateImageOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://www.saferwatch.com/helpdocs/WebServices/CertData.php?version=32<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>The certificate image is a scanned image provided by the producer and shows the insurance coverages. The certificate ID is provided under the CertData section of the CarrierLookup service. <br> It can be a bit confusing as there is no standard as to how certificates are provided by the producer: In some cases, there may be mulitple coverages on a certificate. <br> Other times, there are multiple certificates each showing different coverages. Use the web service to aquire link to a specific Certificate Image for the user to download. <br> This service validates and bills the user for the Certificate Image if necessary and responds with a URL to download the Certificate Image. The URL is a one-use link that is invalidated after 24 hours.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>CertData -> CertData Images -> RequestImage<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://www.saferwatch.com/helpdocs/WebServices/CertData.php?version=32<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>The certificate image is a scanned image provided by the producer and shows the insurance coverages. The certificate ID is provided under the CertData section of the CarrierLookup service.<br> It can be a bit confusing as there is no standard as to how certificates are provided by the producer: In some cases, there may be mulitple coverages on a certificate.<br> Other times, there are multiple certificates each showing different coverages. Use the web service to aquire link to a specific Certificate Image for the user to download.<br> This service validates and bills the user for the Certificate Image if necessary and responds with a URL to download the Certificate Image. The URL is a one-use link that is invalidated after 24 hours.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>CertData -> CertData Images -> RequestImage<br> </td>
 <td>https://www.saferwatch.com/webservices/CarrierService32.php</td>
 <td>GET</td>
 </tr>
@@ -1245,7 +1245,7 @@
 </tr>
 <tr>
 <td>SamsaraUpsertDriverOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developers.samsara.com/reference/createdriver<br> https://developers.samsara.com/reference/updatedriver<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Add a driver to the organization or update a specific driver's information. This can also be used to activate or de-activate a given driver by setting the driverActivationStatus field. <br> If the driverActivationStatus field is 'deactivated' then the user can also specify the deactivatedAtTime. <br> The deactivatedAtTime cannot be more than 6 months in the past and must not come before the dirver's latest active HOS log. <br> It will be considered an error if deactivatedAtTime is provided with a driverActivationStatus of active.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Create/Update a driver<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developers.samsara.com/reference/createdriver<br> https://developers.samsara.com/reference/updatedriver<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>Add a driver to the organization or update a specific driver's information. This can also be used to activate or de-activate a given driver by setting the driverActivationStatus field.<br> If the driverActivationStatus field is 'deactivated' then the user can also specify the deactivatedAtTime.<br> The deactivatedAtTime cannot be more than 6 months in the past and must not come before the dirver's latest active HOS log.<br> It will be considered an error if deactivatedAtTime is provided with a driverActivationStatus of active.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Create/Update a driver<br> </td>
 <td>https://api.samsara.com/fleet/drivers</td>
 <td>POST' : 'PATCH</td>
 </tr>
@@ -1430,7 +1430,7 @@
 </tr>
 <tr>
 <td>TriumphPayGetReferenceDataOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "TriumphPay (HubTran)" Account in Corporate Org ("TriumphPay Payments Integration API (Full) (3) (1).postman_collection4-11-23")<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>A method that is used to retrieve all available invoice/invoice import/load status types which are populated by TriumphPay. <br> This list does not change and can be cached. An invoice’s status provides insight on the lifecycle of the invoice. No input parameters required<br> An invoice’s invoice status provides insight on the status of the invoice in the Broker’s external system.<br> A load’s status provides insight on the status of the load in the Payor’s system. No input required<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Invoice, Load, Import Status Types<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>Attached to "TriumphPay (HubTran)" Account in Corporate Org ("TriumphPay Payments Integration API (Full) (3) (1).postman_collection4-11-23")<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>A method that is used to retrieve all available invoice/invoice import/load status types which are populated by TriumphPay.<br> This list does not change and can be cached. An invoice’s status provides insight on the lifecycle of the invoice. No input parameters required<br> An invoice’s invoice status provides insight on the status of the invoice in the Broker’s external system.<br> A load’s status provides insight on the status of the load in the Payor’s system. No input required<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Invoice, Load, Import Status Types<br> </td>
 <td>https://api.triumphpay.com</td>
 <td>GET</td>
 </tr>
@@ -1455,7 +1455,7 @@
 <tr>
 <td rowspan=7>TruckerToolsAPI</td>
 <td>TruckerToolsAddCarrierOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://app.swaggerhub.com/apis/truckertools/SmartCapacity_Sync_Carriers/2.0.1<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>API used by Brokers to identify Carriers who are or aren't qualified on the Trucker Tools portal. Qualified Carriers marked as in-network can see load details and contact information in Trucker Tools. <br> Out-of-network Carriers can only see the Broker's loads exist and must use our platform to communicate with the Broker.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>SmartCapacity_Sync_Carriers<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://app.swaggerhub.com/apis/truckertools/SmartCapacity_Sync_Carriers/2.0.1<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>API used by Brokers to identify Carriers who are or aren't qualified on the Trucker Tools portal. Qualified Carriers marked as in-network can see load details and contact information in Trucker Tools.<br> Out-of-network Carriers can only see the Broker's loads exist and must use our platform to communicate with the Broker.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>SmartCapacity_Sync_Carriers<br> </td>
 <td>https://api.truckertools.com/loadtrackservice/api/qualifiedCarriers</td>
 <td>POST</td>
 </tr>
@@ -1525,7 +1525,7 @@
 </tr>
 <tr>
 <td>TruckstopRateConSearchOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developer.truckstop.com/Documentation/CompanyManagement#add-carrier<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>"Search for a terms and conditions entry.<br> The Terms And Conditions API allows a broker to create terms and conditions that apply to the Book It Now load they are posting to the load board. <br> Carriers will need to agree to the terms and conditions in order to book the load."<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Rate Con Search<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://developer.truckstop.com/Documentation/CompanyManagement#add-carrier<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>"Search for a terms and conditions entry.<br> The Terms And Conditions API allows a broker to create terms and conditions that apply to the Book It Now load they are posting to the load board.<br> Carriers will need to agree to the terms and conditions in order to book the load."<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Rate Con Search<br> </td>
 <td>https://api.truckstop.com/termsandconditions/v1/ratecon/search</td>
 <td>POST</td>
 </tr>
@@ -1568,7 +1568,7 @@
 <tr>
 <td rowspan=1>TwilioAPI</td>
 <td>TwilioSendEmailOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.sendgrid.com/api-reference/mail-send/mail-send<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>The Mail Send endpoint allows you to send email over SendGrid’s v3 Web API, the most recent version of our API. <br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Mail Send<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.sendgrid.com/api-reference/mail-send/mail-send<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>The Mail Send endpoint allows you to send email over SendGrid’s v3 Web API, the most recent version of our API.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>Mail Send<br> </td>
 <td>https://api.sendgrid.com/v3/mail/send</td>
 <td>POST</td>
 </tr>
