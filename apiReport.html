@@ -87,7 +87,7 @@
 </head>
 <body>
     <h2>Revenova API Integration Report
-17 March 2026 at 08:16:11
+18 March 2026 at 15:33:16
 </h2>
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for API" title="Type in a name">
     <table id="myTable">
@@ -255,7 +255,7 @@
 </tr>
 <tr>
 <td>BanyanQuoteOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>ImportForQuote_Sync: https://docs.banyantechnology.com/#18523d92-bd3a-4dd1-aa9f-786e11921cf1<br> UpdateLoad: https://docs.banyantechnology.com/#bd80ef00-bff0-4abc-ab7c-1e50eb44017b<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>ImportForQuote_Sync: This function will import a shipment in the Banyan system and will initiate the rating process. Unlike ImportForQuote, this function will wait for the rating process to complete before returning a response.<br> When using accessorials, rate request will only be sent to carriers that accept the select accessorials. -COD and Declared liability are considered accessorials.<br> User defined values and reference fields are not required for a request, but are available for custom fields to be passed and related to the shipment<br> UpdateLoad: This function will update an existing Load in Banyan. If vital information is to be updated, this will trigger a rerate.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>ImportForQuote_Sync, UpdateLoad<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>ImportForQuote_Sync: https://docs.banyantechnology.com/v2/import-for-quote-sync<br> UpdateLoad: https://docs.banyantechnology.com/v2/update-load<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>ImportForQuote_Sync: This function will import a shipment in the Banyan system and will initiate the rating process. Unlike ImportForQuote, this function will wait for the rating process to complete before returning a response.<br> When using accessorials, rate request will only be sent to carriers that accept the select accessorials. -COD and Declared liability are considered accessorials.<br> User defined values and reference fields are not required for a request, but are available for custom fields to be passed and related to the shipment<br> UpdateLoad: This function will update an existing Load in Banyan. If vital information is to be updated, this will trigger a rerate.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>ImportForQuote_Sync, UpdateLoad<br> </td>
 <td>https://ws.logistics.banyantechnology.com/services/api/rest</td>
 <td>POST</td>
 </tr>
@@ -267,13 +267,13 @@
 </tr>
 <tr>
 <td>BanyanTenderOperation</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.banyantechnology.com/#eb182530-4505-40c4-a4a6-33492974c4d5<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This function will book a quote that belongs to the requested shipment. Functionality exists to also dispatch the shipment. Booking a quote only awards a quote in Banyan, and no communication is done with the given carrier. When dispatching the shipment, the communication is controlled by the SubmitPickup bit.<br> Additionally, the quote ID is required for a successful response. You obtain this via the GetQuotes call.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>BookLoad<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.banyantechnology.com/v2/book-load<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This function will book a quote that belongs to the requested shipment. Functionality exists to also dispatch the shipment. Booking a quote only awards a quote in Banyan, and no communication is done with the given carrier. When dispatching the shipment, the communication is controlled by the SubmitPickup bit.<br> Additionally, the quote ID is required for a successful response. You obtain this via the GetQuotes call.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>BookLoad<br> </td>
 <td>https://ws.logistics.banyantechnology.com/services/api/rest/BookLoad</td>
 <td>POST</td>
 </tr>
 <tr>
 <td>BanyanTenderOperation2</td>
-<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.banyantechnology.com/#f75f9c9e-da9e-437e-beac-9d11b239afee<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This function will add a shipment, add a manual quote to that shipment, and book that manual quote. Dispatching the requested manual quote is optional.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>ImportForBook<br> </td>
+<td height=80px style="border: 1px solid #000; word-wrap: break-word;"><span style="color:SteelBlue; font-weight:bold">Link to Docs: </span>https://docs.banyantechnology.com/v2/import-for-book<br> <span style="color:SteelBlue; font-weight:bold">Notes: </span>This function will add a shipment, add a manual quote to that shipment, and book that manual quote. Dispatching the requested manual quote is optional.<br> <span style="color:SteelBlue; font-weight:bold">Name: </span>ImportForBook<br> </td>
 <td>https://ws.logistics.banyantechnology.com/services/api/rest/ImportForBook</td>
 <td>POST</td>
 </tr>
